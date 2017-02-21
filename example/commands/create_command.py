@@ -21,8 +21,8 @@ def create_command(name):
     assert file_name not in listdir(dirname(__file__)), \
         'There already exists a file example/commands/%s' % file_name
 
-    with open(join(dirname(__file__), file_name), 'w') as f:
-        f.write(dedent('''\
+    with open(join(dirname(__file__), file_name), 'w') as new_file:
+        new_file.write(dedent('''\
         """Module docs"""
 
 
