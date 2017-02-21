@@ -5,10 +5,16 @@ To start developing:
     ./build -e dev
     ./.tox/dev/bin/example help
 
-To package as a single pex executable:
+Adding commands is easy:
+
+    $ ./.tox/dev/bin/example create-command new-command
+    Created new file: example/commands/new_command.py
+    $ ./.tox/dev/bin/example new-command
+    Hello, you just ran new-command!
+
+To package as a single [pex executable](https://github.com/pantsbuild/pex):
 
     ./build -e package
-    ./example.pex help
     scp example.pex ...
 
 To run the tests
