@@ -1,7 +1,6 @@
 """
 Create a new sub command.
 """
-from __future__ import print_function
 from os.path import dirname, join
 from os import listdir
 from textwrap import dedent

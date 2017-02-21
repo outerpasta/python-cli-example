@@ -3,7 +3,6 @@
 """
 Example cli tool
 """
-from __future__ import print_function
 import argh
 
 from example.commands import COMMANDS
