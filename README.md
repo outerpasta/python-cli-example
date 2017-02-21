@@ -28,6 +28,6 @@ For historical reasons, here is how the 'build' file was created:
     virtualenv -p python2 venv && \
     source venv/bin/activate && \
     pip install pex && \
-    pex tox -c tox -o build && \
+    pex tox -c tox --python-shebang='/usr/bin/env python2' -o build && \
     deactivate && \
     rm -rf venv
